@@ -25,7 +25,7 @@ public class HTTPSocket {
     {
         try {
         Socket connection = null;
-        connection = new Socket("www.oreilly.com", 80);
+        connection = new Socket("dcsama5.tumblr.com", 80);
         Writer out = new OutputStreamWriter(connection.getOutputStream(), "8859_1");
         out.write("GET / HTTP1.1\r\n\r\n");
         out.flush();
