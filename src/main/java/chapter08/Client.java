@@ -25,7 +25,7 @@ public class Client {
         Socket connection = new Socket("localhost", 13);
         InputStream in = connection.getInputStream();
         OutputStream out = connection.getOutputStream();
-        Writer writer = new OutputStreamWriter(out, "ASCII");
+//        Writer writer = new OutputStreamWriter(out, "ASCII");
         Reader reader = new InputStreamReader(in);
         int chara = reader.read();
         System.out.println((char)chara);
